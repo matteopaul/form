@@ -1,0 +1,85 @@
+#tab1--heading
+  text-transform: uppercase
+  font-weight: 550
+  color: #000000
+  position: relative
+  top: 100px
+
+
+#tab1--heading-main
+  color: #000000
+  position: absolute
+  top: 110px
+  font-size: 40px
+
+
+#tab1--selection-container
+  position: absolute
+  width: 100%
+  height: 40%
+  bottom: 125px
+  left: 0
+
+
+#tab1--selection
+  position: relative
+  height: 100%
+  text-align: center
+
+
+.tab1--selection-item
+  margin: 0 10px
+  position: relative
+  display: inline-block
+  height: 100%
+  overflow: hidden
+
+
+.tab1--selection-item img
+  position: relative
+  height: 100%
+  transition: 0.2s
+  filter: blur(0px)
+
+
+.tab1--selection-item-overlay
+  position: absolute
+  width: 100%
+  height: 100%
+  background: rgba(14, 14, 14, 0.5)
+  top: 0
+  left: 0
+  opacity: 0
+  transition: 0.2s
+
+
+.tab1--selection-item:hover img
+  filter: blur(5px)
+  transform: scale(1.1)
+
+
+.tab1--selection-item:hover .tab1--selection-item-overlay
+  opacity: 1
+
+
+.tab1--selection-item-overlay-main
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  color: #ffffff
+  text-transform: uppercase
+  text-decoration: none
+
+
+.tab1--selection-item-overlay-main span
+  margin-right: 25px
+  cursor: pointer
+
+
+.tab1--selection-item-overlay-main a
+  text-decoration: none
+  color: #ffffff
+
+
+.tab1--selection-item-overlay-main a:hover, .tab1--selection-item-overlay-main span:hover
+  border-bottom: 2px solid #ff0000

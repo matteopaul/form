@@ -1,0 +1,60 @@
+#tab2--selection-container
+  position: absolute
+  width: 100%
+  height: 60%
+  left: 0
+  bottom: 125px
+
+
+#tab2--selection
+  position: relative
+  height: 100%
+  text-align: center
+
+
+.tab2--selection-item
+  position: relative
+  margin: 10px
+  height: 45%
+  width: 22%
+  display: inline-block
+  overflow: hidden
+  text-align: center
+
+
+
+.tab2--selection-item img
+  transition: all 0.15s
+
+
+.tab2--selection-item:hover img
+  transform: scale(1.1)
+  filter: blur(5px)
+  transition: 0.15s
+
+
+.tab2--selection-item-overlay
+  position: absolute
+  width: 100%
+  height: 100%
+  background: rgba(14, 14, 14, 0.5)
+  top: 0
+  left: 0
+  opacity: 0
+  transition: 0.2s
+
+
+.tab2--selection-item:hover .tab2--selection-item-overlay
+  opacity: 1
+
+
+.tab2--selection-item-overlay-main
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  color: #ffffff
+  text-transform: uppercase
+
+
+.tab2--selection-item-overlay-main span
+  cursor: pointer
